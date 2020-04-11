@@ -1,0 +1,56 @@
+* {
+    font-family: Tahoma;
+    background: hsl(180, 52%, 96%);
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    position: fixed;
+    overflow: auto;
+}
+.list {
+	border-right: 2px solid black;
+}
+
+.list,a {
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 25px;
+    height: 100%;
+}
+.list a {
+	border: 1px solid black;
+	font-weight: bold;
+	background: white;
+}
+.list a:hover {
+	color: white;
+	background: black;
+}
+xmp {
+    font-family: monospace;
+    text-align: center;
+}
+
+#main-content {
+    margin-left: 300px;
+    padding: 10px 30px;
+    height: 1000px;
+}
+h2 {
+	text-align: center;
+	padding-top: 20px;
+}
+.section {
+	height: 100vh;
+	margin-top: 30px;
+}
+
+p {
+	line-height: 1.6;
+}
