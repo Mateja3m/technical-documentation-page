@@ -1,9 +1,14 @@
 * {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+html{
+  scroll-behavior: smooth;
 }
 
 .list {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,9 +76,5 @@ h2 {
     background-color: black; 
     color: white;
 }
-
-
-
-
 
 
