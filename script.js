@@ -1,4 +1,4 @@
-let mybutton = document.getElementsByClassName('btn-upp');
+let mybutton = document.querySelector('.btn-upp');
 
 window.onscroll = function () {
     scrollFunction()
