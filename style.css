@@ -8,19 +8,27 @@ html{
 }
 
 .list {
-  position: absolute;
+  position: absolute;  /*main content puts in the top of the page*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   height: 90vh;
   list-style: none;
-  margin: 30px 10px;
+  margin: 10px 1px ;
+  max-width: 450px;
 
 }
 
+.navigation {
+    max-width: 450px;
+}
 
+.wrapp {
+    max-width: 450px;
+}
 ul a {
-  align-self: stretch;
+
   text-decoration: none;
   padding: 20px;
   font-size: 20px;
@@ -57,19 +65,19 @@ h2 {
 }
 
 .btn-upp {
-  /* display: none; Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 40px; /* Place the button at the bottom of the page */
-  right: 10px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #555; /* Set a background color */
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 5px; 
+  z-index: 99;
+  border: none; 
+  outline: none; 
+  background-color: #555; 
   color: white; 
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 10px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 10px;
+  font-size: 18px;
 }
 
 .btn-upp:hover {
