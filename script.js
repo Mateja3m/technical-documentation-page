@@ -1,18 +1,26 @@
-let mybutton = document.querySelector('.btn-upp');
+var scrollToTopBtn= document.querySelector(".btn-upp")
+var rootElement = document.documentElement
 
-window.onscroll = function () {
-    scrollFunction()
-};
+function handleScroll() {
+  // do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  if ((rootElement.scrollTop / scrollTotal ) > 0) {
+    //show button
+    scrollToTopBtn.style.display = "block"
+  } else {
+    //hide button
 
-function scrollFunction() { 
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = 'block';
-    } else {
-        mybutton.style.display = 'none';
-    }
+    scrollToTopBtn.style.display = "none"
+  }
 }
- 
+
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+  //scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
 }
+scrollToTopBtn.addEventListener("click", topFunction)
+document.addEventListener("scroll", handleScroll)
+ 

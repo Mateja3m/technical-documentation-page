@@ -1,6 +1,10 @@
 * {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+html{
+  scroll-behavior: smooth;
 }
 
 .list {
@@ -80,9 +84,5 @@ h2 {
     background-color: black; 
     color: white;
 }
-
-
-
-
 
 
